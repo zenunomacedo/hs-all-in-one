@@ -93,7 +93,7 @@ dotToUS = concatMap go
         go c = [c]
 
 tosymbol :: Int -> String
-tosymbol = map ("⚛☃⚾♛♬☏⚒☸☀☮☘☭∞∃" !!) . map (subtract (ord '0')) . map ord . show
+tosymbol = map ("⚛☃⚾♛♬☏⚒☸☀☮☘☭∞∃" !!) . map (subtract (ord '0')) . map ord . show . abs
 
 mangle :: String -> l2 -> Name l1 -> Name l2
 mangle _ l i@(Ident _ "main") = l <$ i -- leave main in place
