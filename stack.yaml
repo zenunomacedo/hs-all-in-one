@@ -9,6 +9,7 @@ packages:
 # Using stack 2.5.1 - had troubles using 2.15.1 and 3.3.1
 # AFAIK there's no way to specify the stack version itself in these files 
 # I strongly advise using ghcup to set stack to 2.5.1
+# You might also need to 'cabal install happy' beforehand...
 extra-deps: 
  - haskell-src-exts-1.18.0
  - haskell-names-0.8.0
